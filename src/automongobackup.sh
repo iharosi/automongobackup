@@ -43,7 +43,7 @@ DBHOST="127.0.0.1"
 DBPORT="27017"
 
 # Backup directory location e.g /backups
-BACKUPDIR="/var/backups/mongodb"
+BACKUPDIR="/opt/backups/mongodb"
 
 # Mail setup
 # What would you like to be mailed to you?
@@ -51,7 +51,7 @@ BACKUPDIR="/var/backups/mongodb"
 # - files : send log file and sql files as attachments (see docs)
 # - stdout : will simply output the log to the screen if run manually.
 # - quiet : Only send logs if an error occurs to the MAILADDR.
-MAILCONTENT="stdout"
+MAILCONTENT="log"
 
 # Set the maximum allowed email size in k. (4000 = approx 5MB email [see docs])
 MAXATTSIZE="4000"
@@ -76,13 +76,13 @@ CLEANUP="yes"
 LATEST="yes"
 
 # Make Hardlink not a copy
-LATESTLINK="yes"
+LATESTLINK="no"
 
 # Use oplog for point-in-time snapshotting.
-OPLOG="yes"
+OPLOG="no"
 
 # Choose other Server if is Replica-Set Master
-REPLICAONSLAVE="yes"
+REPLICAONSLAVE="no"
 
 # Command to run before backups (uncomment to use)
 # PREBACKUP=""
